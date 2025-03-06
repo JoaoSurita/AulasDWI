@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>CSS</title>
+        <meta charset="utf-8">
+        
+        <!-- CSS Interno -> TAG Style no HEAD-->
+        <style>
+            /* Existem 3 formas de aplicar o css em elementos:
+            TAG -> utilizando o nome da TAG. EX: b{...}
+            .classe -> criamos uma classe para reaproveitar
+            o mesmo css em vários locais. Ex: .azul{...}
+            #id -> definimos um id para o elemento, aplica somente
+            a ele, só podendo haver 1 id com aquele nome.
+            Ex: #logo{...}
+            */
+            b{
+                font-weight: normal;
+                color: #f0f; /*Cor Simplificada: 00 00 ff*/
+                font-style: italic;
+            }
+
+            .texto-verde{
+                color: green
+            }
+            
+            .texto-amarelo{
+                color: yellow
+            }
+
+            .fundo-vermelho{
+                background: red
+            }
+
+            .fundo-azul{
+                background-color: blue
+            }
+
+            #quadrado {
+                height: 100px;
+                width: 100px;
+                border-radius: 20px;
+                background-color: rgb(190, 31, 31);
+            }
+        </style>
+        <!-- CSS Externo -> Adiciona arquivos css à página -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Esse deve ser o primeiro css da página (aqui tá errado!) -->
+        <link rel="stylesheet" href="css/reset.css">
+    </head>
+
+    <body>
+        <h1>Aula Sobre CSS</h1>
+        <!-- CSS Inline -> Direto no elemento HTML-->
+        <p style="color: #f5a47c">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium cumque temporibus excepturi, eius alias, aliquam at, non deleniti omnis a nobis impedit? Consequuntur eum reprehenderit facilis commodi eius. Nostrum, voluptatem.
+        </p>
+        <p style="color: #ff0000; text-align: center; font-weight: 500;">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium cumque temporibus excepturi, eius alias, aliquam at, non deleniti omnis a nobis impedit? Consequuntur eum reprehenderit facilis commodi eius. Nostrum, voluptatem.
+        </p>
+        <p>
+            Texto que era pra ser negrito pois estou usando b: <b>Olá CSS!</b>
+        </p>
+        <b>
+            Também sou negrito!
+        </b> <br>
+        
+        <!--Para utilizar classes utilizamos a propriedade class-->
+        <b class="texto-amarelo fundo-azul">
+            Eu mudei utilizando classes!
+        </b>
+        <br><br>
+        <b class="texto-verde fundo-vermelho">
+            Trocando novamente as cores
+        </b>
+        <p>
+            No meio do texto <i class="texto-verde"> também pode!</i>
+        </p>
+        <p class="texto-verde">
+            Bem vindo ao mundo do CSS
+            <b style="font-size: 25px;"> Onde alteramos tudo!</b>
+        </p>
+
+        <div id="quadrado";>
+            <!-- O ID precisa ser único na página! -->
+        </div>
+    </body>
+
+</html>
