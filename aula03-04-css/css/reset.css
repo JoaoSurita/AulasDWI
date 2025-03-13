@@ -8,7 +8,8 @@ Este arquivo limpa o css proprietário do navagador
 ::after -> pseudo elementos que venham depois
 */
 
-*, *::before, *::after{
+*,
+ *::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
