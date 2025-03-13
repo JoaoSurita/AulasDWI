@@ -1,0 +1,26 @@
+.cabecalho{
+    width: 100%;
+    height: 80px;
+    background-color: var(--cor-cabecalho);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabecalho .logo {
+    width: 70px;
+    height: auto;
+}
+
+.menu {
+    width: 70%;
+    display: flex;
+    justify-content: end;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    margin: 0;
+}

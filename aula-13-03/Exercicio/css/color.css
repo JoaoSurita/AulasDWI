@@ -1,0 +1,15 @@
+:root {
+    /*Tema Claro*/
+    --cor-cabecalho: #ece9e9;
+    --cor-texto: #000;
+    --cor-fundo: #fff;
+    --cor-footer: #ff9900;
+
+    body.dark-mode {
+        /*Tema Escuro*/
+        --cor-cabecalho: #1f1f1f;
+        --cor-texto: #fff;
+        --cor-fundo: #121212;
+        --cor-footer: #ff9900;
+    }
+}
