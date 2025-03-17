@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>Receita de Lasanha</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/color.css">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
 
-    <body>
-        <header class="cabecalho">
-            <img src="imgs/logo1.webp" alt="" class="logo">
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Outras Receitas</a></li>
-                    <li><a href="#">FeedBack</a></li>
-                </ul>
-            </nav>
-        </header>
-        <script src="./js/script.js"></script>
+<head>
+    <title>Receita de Lasanha</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-        <h1>Receita de Lasanha de Carne Moída</h1>
-        <h2>Essa é receita é para você que quer uma receita simples e muito deliciosa</h2>
-        <img src="imgs/lasanha.jpg" height="350">
-        <hr>
-        <section class="ingredientes">
+<body>
+    <header class="cabecalho">
+        <img src="imgs/logo1.webp" alt="" class="logo">
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Outras Receitas</a></li>
+                <li><a href="#">FeedBack</a></li>
+            </ul>
+            <div onclick="toggleDarkMode()" class="dark-mode-toggle">Dark Mode</div>
+        </nav>
+    </header>
+    <script src="./js/script.js"></script>
+
+    <section class="introducao">
+        <h1>RECEITA DE LASANHA A BOLONHESA</h1>
+        <h2>Essa é receita é para você que quer uma receita simples e muito deliciosa!</h2>
+        <div class="imagem">
+            <img src="imgs/lasanha.jpg" height="350" class="img">
+        </div>
+    </section>
+    <hr>
+    <section class="cards">
+        <section class="card">
             <h2>Ingredientes</h2>
             <h3>Molho a Bolonhesa</h3>
             <ul>
@@ -48,7 +55,7 @@
             </ul>
         </section>
         <hr>
-        <section class="modo-preparo">
+        <section class="card">
             <h2>Modo De Preparo</h2>
             <h3>1. Prepare o molho à bolonhesa:</h3>
             <ol>
@@ -73,5 +80,15 @@
             <h3>Dica: Se quiser, adicione requeijão cremoso entre as camadas para deixar ainda mais gostoso!</h3>
             <h3>Pronto! Agora é só servir essa lasanha deliciosa. Vai testar essa receita? </h3>
         </section>
-    </body>
+    </section>
+    <footer>
+        <p>João Pedro Surita - 2025</p>
+    </footer>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+
 </html>

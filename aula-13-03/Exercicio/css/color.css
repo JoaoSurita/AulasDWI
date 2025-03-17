@@ -1,15 +1,19 @@
 :root {
     /*Tema Claro*/
-    --cor-cabecalho: #ece9e9;
-    --cor-texto: #000;
-    --cor-fundo: #fff;
+    --cor-cabecalho: #f90;
+    --cor-texto: rgb(255, 81, 0);
+    --cor-textocabecalho: #fff;
+    --cor-fundo: #f5dbba;
     --cor-footer: #ff9900;
+    --cor-card: #e6e2de;
 
     body.dark-mode {
         /*Tema Escuro*/
         --cor-cabecalho: #1f1f1f;
         --cor-texto: #fff;
+        --cor-textocabecalho: #fff;
         --cor-fundo: #121212;
-        --cor-footer: #ff9900;
+        --cor-footer: #1f1f1f;
+        --cor-card: #2f2f2f;
     }
 }
