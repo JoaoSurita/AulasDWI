@@ -1,0 +1,84 @@
+h1 {
+    color: #fff;
+    padding: 20px;
+    font-size: 70px;
+}
+
+table, tbody, tr td{
+    border-collapse: collapse;
+}
+
+.btn {
+    width: 100%;
+    min-width: 100px;
+    height: 100%;
+    min-height: 100px;
+    font-size: 30px;
+    font-weight: 900;
+    border-radius: 10px;
+    border: none;
+}
+
+.calculo {
+    text-align: right;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    background-color: #c1cec0;
+    font-family: 'Courier New', Courier, monospace;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.resultado {
+    text-align: right;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 40px;
+    background-color: #c1cec0;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.limpar {
+    background-color: #f76228;
+    color: #fae2b5;
+    font-size: 40px;
+    border: 1px solid #f07b67;
+}
+
+.igual {
+    background-color: #c1f390;
+    color: #fff;
+    font-size: 50px;
+    border: 1px solid #8fcf63;
+}
+
+.numeros {
+    background-color: #1f1f1f;
+    color: #fff;
+    border: 1px solid #0f0f0f;
+}
+
+.operacoes {
+    background-color: #2f2f2f;
+    color: #fff;
+    font-size: 35px;
+    border: 1px solid #1f1f1f;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.area {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
