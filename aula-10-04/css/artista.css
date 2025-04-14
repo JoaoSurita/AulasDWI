@@ -1,0 +1,64 @@
+.perfil {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.perfil p {
+    width: 25%;
+    margin-top: 50px;
+}
+
+.p-artista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.info nav {
+    display: flex;
+    width: 70%;
+    height: auto;
+    gap: 50px;
+}
+
+.a-conteudo {
+    width: 57%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.outro {
+    width: 32.5%;
+    height: auto;
+    display: flex;
+    align-items: start;
+}
+
+.outro a {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.outro a img {
+    width: 200px;
+    height: auto;
+    border-radius: 100%;
+}

@@ -18,10 +18,13 @@
     align-items: center;
 }
 
+.lista a {
+    padding: 32px;
+    height: auto;
+}
+
 .lista a:hover {
     background-color: #3f3f3f;
-    padding: 20px;
-    height: auto;
 }
 
 .artistas {
@@ -51,23 +54,4 @@
 .barra {
     width: 40%;
     margin: 120px auto;
-    
-}
-
-.botao {
-    display: flex;
-    padding: 30px;
-    list-style: none;
-}
-
-.perfil {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.perfil p {
-    width: 450px;
-    display: flex;
-    justify-content: end;
 }
