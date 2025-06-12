@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação</title>
+
+    <style>
+        body {
+            background-color: #2f2f2f;
+        }
+
+        .all {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 100px;
+
+            & .box {
+                width: 200px;
+                height: 200px;
+                background: #1f3ce4;
+                border-radius: 10px;
+                box-shadow: 0 0 50px #1f3ce4;
+                animation: 3.5s correr ease-in-out infinite;
+            }
+
+            & .box2 {
+                width: 200px;
+                height: 200px;
+                background: #1f3ce4;
+                border-radius: 10px;
+                box-shadow: 0 0 50px #1f3ce4;
+                animation: 3.5s correr2 ease-in-out infinite;
+            }
+        }
+
+        @keyframes correr {
+            0% {
+                transform: translateX(100%);
+            }
+            
+            25% {
+                transform: translateX(0%) scale(0.7);
+            }
+            
+            50% {
+                background: #f00;
+                box-shadow: 0 0 10px #f00;
+                transform: translateX(-100%);
+            }
+            
+            75% {
+                background: #0f0;
+                box-shadow: 0 0 10px #0f0;
+                transform: translateX(0%) scale(1.2);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        @keyframes correr2 {
+            0% {
+                transform: translateX(-100%);
+            }
+            
+            25% {
+                transform: translateX(0%) scale(0.7);
+            }
+            
+            50% {
+                background: #f00;
+                box-shadow: 0 0 10px #f00;
+                transform: translateX(100%);
+            }
+            
+            75% {
+                background: #0f0;
+                box-shadow: 0 0 10px #0f0;
+                transform: translateX(0%) scale(1.2);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section class="all">
+        <div class="box"></div>
+        <div class="box2"></div>
+    </section>
+</body>
+</html>
